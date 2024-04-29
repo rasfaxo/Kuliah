@@ -1,0 +1,16 @@
+def menarahanoi(n, asal, tujuan, bantuan):
+    if n == 1:
+        print("pindah disk 1 dari tiang", asal, "ke tiang", tujuan)
+        return
+    menarahanoi(n-1, asal, bantuan, tujuan)
+    print("pindah disk", n, "dari tiang", asal, "ke tiang", tujuan)
+    menarahanoi(n-1, bantuan, tujuan, asal)
+
+
+# drive code
+n = int(input("jumlah piringan : "))
+menarahanoi(n, 'a', 'b', 'c')
+# jumlah cara
+print("Jumlah cara : ", (2**n)-1)
+# Rumus Menara Hanoi (2pangkatn - 1)
+# n=jumlah piringan

@@ -1,0 +1,60 @@
+import numpy as np
+print("latihan 1")
+# Deklarasi matriks 4x4
+matrik = ([0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0])
+
+# isi matriks 4x4
+for i in range(4):
+    for j in range(4):
+        if i == j:
+            matrik[i][j] = i+1
+        if i < j:
+            matrik[i][j] = j+1
+        if i > j:
+            matrik[i][j] = 0
+
+# cetak bentuk matriks
+for i in range(4):
+    print(matrik[i])
+
+print("\nlatihan 2")
+# Deklarasi matriks 4x4
+matrik = ([1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4])
+
+# isi matriks 4x4
+for i in range(4):
+    for j in range(4):
+        if i == j:
+            matrik[i][j] = i+1
+        if i < j:
+            matrik[i][j] = 0
+        if i > j:
+            matrik[i][j] = i+1
+
+# cetak bentuk matriks
+for i in range(4):
+    print(matrik[i])
+
+print("\nLatihan 3")
+# Deklarasi matriks 4x4
+matrik = ([0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0])
+
+# isi matriks 4x4
+for i in range(4):
+    for j in range(4):
+        if i == j:
+            matrik[i][j] = 1
+        if i < j:
+            matrik[i][j] = 0
+        if i > j:
+            matrik[i][j] = 0
+
+# cetak bentuk matriks
+for i in range(4):
+    print(matrik[i])
+
+print("\nLatihan 4")
+nilai = [1, 2, 3, 4]
+for i in range(len(nilai)):
+    nilai[i] = 2*i+1
+    print(nilai[i])
